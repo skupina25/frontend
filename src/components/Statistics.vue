@@ -34,7 +34,12 @@ export default {
   },
   methods: {
     generatePdf(statistic) {
-      console.log(statistic)
+      let url = 'http://localhost:8083/v1/pdf';
+      return axios
+        .post(url, statistic)
+        .then(response => {
+          return response.data
+        });
     },
     generateStatistics(id, tasks) {
       let url = 'http://localhost:8082/v1/statistics/user/' + id;
