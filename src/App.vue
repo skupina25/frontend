@@ -5,6 +5,7 @@
       <router-link to="/upload">Upload</router-link>
       <router-link to="/all-images">All images</router-link>
       <router-link to="/statistics">Statistics</router-link>
+      <router-link to="/boards">Boards</router-link>
     </nav>
     <router-view/>
   </div>

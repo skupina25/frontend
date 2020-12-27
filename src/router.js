@@ -4,6 +4,8 @@ import UploadFileToS3 from "./components/UploadFileToS3";
 import AllImages from "./components/AllImages";
 import HelloWorld from "./components/HelloWorld";
 import Statistics from "./components/Statistics";
+import Boards from "./components/Boards";
+import Board from "./components/Board";
 
 Vue.use(Router);
 
@@ -24,6 +26,14 @@ export default new Router({
     {
       path: "/statistics",
       component: Statistics,
+    },
+    {
+      path: "/boards",
+      component: Boards,
+    },
+    {
+      path: "/board/:id",
+      component: Board,
     },
   ],
 });
