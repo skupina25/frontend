@@ -10,7 +10,7 @@
     >
       {{message}}
     </file-selector>
-    <button v-on:click="doUpload">Upload image</button>
+    <button v-on:click="doUpload" v-if="file">Upload image</button>
   </div>
 </template>
 
