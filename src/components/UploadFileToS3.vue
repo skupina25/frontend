@@ -45,7 +45,7 @@ export default {
       let formData = new FormData();
       formData.append('file', this.file);
 
-      let url = 'http://localhost:8080/v1/files/upload';
+      let url = 'http://34.89.29.183:8080/v1/files/upload';
 
       axios
         .post(
@@ -59,6 +59,7 @@ export default {
         )
         .then(() => {
           console.log('Upload is finished')
+          this.file = null;
           this.message = 'Upload successful. Click here again for another try.'
         })
     }

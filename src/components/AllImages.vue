@@ -28,7 +28,7 @@ export default {
     }
   },
   created() {
-    let url = 'http://localhost:8080/v1/files';
+    let url = 'http://34.89.29.183:8080/v1/files';
       axios
         .get(url)
         .then(response => {
@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     getAllFiles() {
-      let url = 'http://localhost:8080/v1/files';
+      let url = 'http://34.89.29.183:8080/v1/files';
       axios
         .get(url)
         .then(response => {
@@ -45,7 +45,7 @@ export default {
         });
     },
     detectFromImg(id) {
-      let url = 'http://localhost:8080/v1/files/detect/' + id;
+      let url = 'http://34.89.29.183:8080/v1/files/detect/' + id;
       axios
         .get(url)
         .then(response => {
@@ -53,7 +53,7 @@ export default {
         });
     },
     deleteImg(id) {
-      let url = 'http://localhost:8080/v1/files/' + id;
+      let url = 'http://34.89.29.183:8080/v1/files/' + id;
       axios
         .delete(url)
         .then(() => this.getAllFiles())
