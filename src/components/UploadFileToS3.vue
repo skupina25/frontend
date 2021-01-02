@@ -45,7 +45,7 @@ export default {
       let formData = new FormData();
       formData.append('file', this.file);
 
-      let url = 'http://34.89.29.183:8080/v1/files/upload';
+      let url = 'http://34.120.64.253/v1/files/upload';
 
       axios
         .post(

@@ -25,7 +25,7 @@ export default {
     }
   },
   created() {
-    let url = 'http://34.89.111.154:8082/v1/statistics';
+    let url = 'http://34.120.64.253/v1/statistics';
     axios
       .get(url)
       .then(response => {
