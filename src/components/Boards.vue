@@ -99,7 +99,7 @@
             getAllBoards() {
 
                 let _this = this;
-                let url = 'http://localhost:8081/api/v1/board';
+                let url = 'http://34.120.64.253/api/v1/board';
 
                 axios
                     .get(url)
@@ -161,7 +161,7 @@
                     return;
                 }
 
-                let url = 'http://localhost:8081/api/v1/board';
+                let url = 'http://34.120.64.253/api/v1/board';
 
                 let newBoard = {
                     title: this.title,
@@ -185,7 +185,7 @@
 
             onDeleteIconPressed(id) {
 
-                let url = `http://localhost:8081/api/v1/board/${id}`;
+                let url = `http://34.120.64.253/api/v1/board/${id}`;
                 let _this = this;
 
                 axios.delete(url)

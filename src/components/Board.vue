@@ -108,7 +108,7 @@
 
 
             getAllTasks() {
-                let url = `http://localhost:8081/api/v1/board/${this.$route.params.id}`;
+                let url = `http://34.120.64.253/api/v1/board/${this.$route.params.id}`;
                 console.log(url);
                 let _this = this;
 
@@ -179,7 +179,7 @@
                 }
 
 
-                let url = `http://localhost:8081/api/v1/board/${this.$route.params.id}/task`;
+                let url = `http://34.120.64.253/api/v1/board/${this.$route.params.id}/task`;
 
                 let newTask = {
                     title: this.title,
@@ -204,7 +204,7 @@
 
             onDeleteIconPressed(id) {
 
-                let url = `http://localhost:8081/api/v1/task/${id}`;
+                let url = `http://34.120.64.253/api/v1/task/${id}`;
                 let _this = this;
 
                 axios.delete(url)
@@ -228,7 +228,7 @@
                 }
 
                 let _this = this;
-                let url = `http://localhost:8081/api/v1/task/${task.id}`;
+                let url = `http://34.120.64.253/api/v1/task/${task.id}`;
 
                 axios.post(url, task)
                     .then(function (response) {
