@@ -6,6 +6,7 @@
       <router-link to="/all-images">All images</router-link>
       <router-link to="/statistics">Statistics</router-link>
       <router-link to="/boards">Boards</router-link>
+      <router-link to="/teams">Teams</router-link>
     </nav>
     <router-view/>
   </div>

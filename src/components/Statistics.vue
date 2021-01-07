@@ -39,7 +39,7 @@ export default {
     generatePdf(statistic) {
       let url = 'http://35.234.64.16:8085/api/v1/pdfStatistic';
       axios
-        .post(url, statistic)
+        .post(url, statistic,  {responseType: 'arraybuffer'})
         .then(response => {
           let newBlob = new Blob([response.data], {type: 'application/pdf'})
           if (window.navigator && window.navigator.msSaveOrOpenBlob) {

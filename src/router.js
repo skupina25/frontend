@@ -6,7 +6,7 @@ import HelloWorld from "./components/HelloWorld";
 import Statistics from "./components/Statistics";
 import Boards from "./components/Boards";
 import Board from "./components/Board";
-
+import Teams from "./components/Teams";
 Vue.use(Router);
 
 export default new Router({
@@ -34,6 +34,10 @@ export default new Router({
     {
       path: "/board/:id",
       component: Board,
+    },
+    {
+      path: "/teams",
+      component: Teams,
     },
   ],
 });
